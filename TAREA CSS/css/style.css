@@ -1,0 +1,52 @@
+body{
+    font-family: Arial, sans-serif;
+    color: black;  
+    
+    
+}
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-align: center;
+      
+
+}
+ul{
+    list-style-type: none ;
+    padding: 0%;
+
+}
+li{
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;   
+
+}
+li:hover {
+    color: lightyellow;
+    cursor: pointer;
+  }
+li:focus{
+    color: lightcyan;
+    
+}
+
+li::before{
+
+    content: ' ❌ ';
+
+}
+
+[data-completed]::before{
+
+    content: '✅';  
+        
+}
+
+[data-completed]{
+    color: grey;
+    text-decoration: line-through;
+        
+}
+  

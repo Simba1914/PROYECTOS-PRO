@@ -1,0 +1,27 @@
+h1:hover{
+    color: grey;
+}
+h1:active{
+    color: blue;
+}
+h1::first-letter{
+    color: blue;
+}
+.tarjeta-descripcion::before{
+    content: '❤️';
+}
+.tarjeta-descripcion::after{
+    content: '😘';
+}
+.tarjeta-descripcion:hover::before{
+    background-color: aquamarine;
+    content: '😘';
+}
+
+/* reset reinicia valores a cero*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* el ancho o alto deun elemento se establece al valor que yo le doy, en pixeles*/
+}
